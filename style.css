@@ -26,7 +26,7 @@ li {
 
 body {
     background-color: #272727;
-    overflow: auto;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {

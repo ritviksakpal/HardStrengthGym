@@ -26,9 +26,7 @@ li {
 
 body {
     background-color: #272727;
-    overflow-x: hidden;    
-    position: fixed;
-
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {

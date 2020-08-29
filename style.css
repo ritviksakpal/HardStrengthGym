@@ -1,0 +1,857 @@
+/* colors 
+
+#272727;
+#eee;
+#50d890
+
+shadow #1b1b1b
+banner #262626b3
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #effffb;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #272727;
+    overflow: auto;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #313131;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #50d890;
+    border-radius: 5px;
+}
+
+#container {
+    height: 100%;
+}
+
+#top {
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(#262626b3, #262626b3), url(/img/gymbg.jpg);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(38, 38, 38);
+    height: 100px;
+    padding: 0 15%;
+}
+
+#logo a {
+    padding: 5px 10px;
+    font-size: 1.8rem;
+    color: #eee;
+    transition: all ease-in-out 0.4s;
+}
+
+#logo a:hover {
+    color: #50d890;
+}
+
+.span {
+    color: #50d890;
+}
+
+.navframes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navframes a {
+    padding: 10px 25px;
+    color: #eee;
+    transition: all ease-in-out 0.4s;
+    font-size: 0.9rem;
+}
+
+.navframes a:hover {
+    color: #50d890;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    margin: 5px;
+    background-color: #eee;
+}
+
+#signup {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    margin: 0 25px;
+    cursor: pointer;
+    outline: none;
+    border: #50d890 solid 1px;
+    transition: all ease-in-out 0.5s;
+    color: #50d890;
+}
+
+#signup:hover {
+    border: #50d890 solid 1px;
+    background-color: #50d890;
+    color: #000;
+    background-color: #50d890;
+    color: #272727;
+}
+
+#section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 900px;
+    color: #eee;
+}
+
+#section p {
+    margin: 0 0 25px 0;
+    font-weight: bolder;
+}
+
+#section h1 {
+    margin: 0 0 28px 0;
+    font-size: 4rem;
+}
+
+#member {
+    background-color: #50d890;
+    color: #000;
+    border: #50d890 solid 1px;
+    padding: 15px 0;
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    margin: 0 auto;
+    transition: all ease-in-out 0.5s;
+}
+
+#member:hover {
+    border: #50d890 solid 1px;
+    background-color: transparent;
+    color: #50d890;
+}
+
+#programs p {
+    color: #eee;
+    font-size: 1rem;
+    line-height: 36px;
+}
+
+#progsec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    padding: 0 150px;
+    background-color: #272727;
+    color: #eee;
+}
+
+#progsec a {
+    color: #50d890;
+}
+
+.progheading {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#programs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.prog img {
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 3px 0px 61px -6px #1b1b1b;
+}
+
+.prog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 40px;
+    background-color: #272727;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-between;
+}
+
+.details p {
+    margin: 0 0 0 20px;
+}
+
+.progsubheading {
+    text-align: center;
+    color: #f1f1f1;
+    font-weight: bold;
+    line-height: 36px;
+    margin: 0;
+}
+
+.progheading {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 100px 0 0 0;
+}
+
+.hr {
+    border: none;
+    border-top: #50d890 solid 1px;
+    width: 10%;
+    margin: 25px 0;
+}
+
+.discover a {
+    font-size: 0.9rem;
+}
+
+.discover a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    color: #eee;
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(rgba(38, 38, 38, 0.7), rgba(38, 38, 38, 0.7)), url(/img/banner.jpg);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 0 0;
+    padding: 100px 0;
+}
+
+.banner p {
+    margin: 15px 300px 40px 300px;
+    text-align: center;
+    line-height: 36px;
+}
+
+#schedule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #272727;
+    color: #eee;
+    padding: 0 0 100px 0;
+    height: fit-content;
+}
+
+#schedule a {
+    color: #50d890;
+    padding: 40px 100px;
+    transition: all ease-in-out 0.4s;
+}
+
+#schedule a:hover {
+    box-shadow: 15px 0px 0px 0px #50d890;
+}
+
+#slot {
+    display: flex;
+}
+
+#slottimes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 3;
+}
+
+#scheduleslot {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex: 5;
+}
+
+.slotoptions {
+    display: flex;
+    align-items: center;
+    /* border: #50d890 solid 1px; */
+    margin: 0 0 10px 0;
+    box-shadow: 3px 0px 61px -6px #1b1b1b;
+}
+
+.slotoptions p {
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+.slotoptions img {
+    width: 100px;
+    box-shadow: 5px 3px 54px -12px #1b1b1b;
+}
+
+.schedulebtn {
+    background-color: #50d890;
+    color: #000;
+    border: #50d890 solid 1px;
+    padding: 15px 0;
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    margin: 30px auto;
+    transition: all ease-in-out 0.5s;
+}
+
+.schedulebtn:hover {
+    background-color: transparent;
+    color: #50d890;
+    border: #50d890 solid 1px;
+}
+
+#scheduleslot img {
+    width: 800px;
+}
+
+#slotheading {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin: 30px 0;
+}
+
+#slotsubheadin {
+    color: #f1f1f1;
+    margin: 0 226px 30px 0;
+    text-align: justify;
+    line-height: 36px;
+}
+
+.rightschedulebtn {
+    background-color: #50d890;
+    color: #000;
+    border: #50d890 solid 1px;
+    padding: 15px 0;
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    margin: 30px auto;
+    transition: all ease-in-out 0.5s;
+    margin: 0 0 0 0;
+}
+
+.rightschedulebtn:hover {
+    background-color: transparent;
+    color: #50d890;
+    border: #50d890 solid 1px;
+}
+
+#trainers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    padding: 0 150px;
+    background-color: #272727;
+    color: #eee;
+}
+
+#trainers a {
+    color: #50d890;
+    transition: all ease-in-out 0.4s;
+}
+
+.banner2 {
+    color: #eee;
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(#262626b3, #262626b3), url(/img/banner2.jpg);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.banner2 p {
+    margin: 26px 400px 40px 400px;
+    text-align: center;
+    line-height: 36px;
+}
+
+#contact {
+    background-color: #50d890;
+    color: #000;
+    border: #50d890 solid 1px;
+    padding: 15px 0;
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    margin: 0 auto;
+    transition: all ease-in-out 0.5s;
+}
+
+#contact:hover {
+    border: #50d890 solid 1px;
+    background-color: transparent;
+    color: #50d890;
+}
+
+#card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    padding: 50px 66px;
+    /* border: #50d890 solid 0.5px; */
+    margin: 50px;
+    box-shadow: 3px 0px 61px -6px #1b1b1b;
+}
+
+.card img {
+    width: 400px;
+}
+
+.position {
+    color: #50d890;
+    font-weight: bolder;
+    margin: 20px 0 0 0;
+}
+
+.name {
+    font-weight: bolder;
+    margin: 20px 0 0 0;
+    font-size: 1.5rem;
+}
+
+.description {
+    color: #f1f1f1;
+    margin: 25px 0 25px 0;
+    line-height: 36px;
+}
+
+.fab {
+    color: #50d890;
+    font-size: 1rem;
+    padding: 0 20px 0 0;
+    border: none;
+    transition: all ease-in-out 0.2s;
+}
+
+.fab:hover {
+    color: #eee;
+}
+
+#contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    /* padding: 0 150px; */
+    background-color: #272727;
+    color: #eee;
+}
+
+#contacts a {
+    color: #50d890;
+    transition: all ease-in-out 0.4s;
+}
+
+#contactscontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 100px 0;
+}
+
+#map {
+    width: 800px;
+    flex: 1;
+    margin: 0 200px 0 0;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #272727;
+    flex: 1;
+    height: 500px;
+    border-radius: 3px;
+    box-shadow: 3px 0px 61px -6px #1b1b1b;
+}
+
+#form div {
+    margin: 10px 0;
+}
+
+#form input {
+    height: 45px;
+    width: 200px;
+    padding: 0 10px;
+    outline: none;
+    background-color: #eee;
+}
+
+#name {
+    margin: 0 30px 0 0;
+}
+
+#messagebutton {
+    background-color: #50d890;
+    color: #272727;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 2px;
+    margin: 15px 0 0 0;
+    outline: none;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;
+}
+
+#messagebutton:hover {
+    background-color: rgb(87, 228, 153);
+}
+
+footer {
+    color: #272727;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #50d890;
+}
+
+.footername {
+    color: #272727;
+    font-weight: bolder;
+}
+
+.footername:hover {
+    /* text-decoration: underline; */
+    color: #000000;
+}
+
+@media(max-width:1900px) {
+    .card {
+        margin: 30px;
+    }
+}
+
+@media(max-width:1800px) {
+    .card {
+        margin: 15px;
+    }
+}
+
+@media(max-width:1700px) {
+    .card {
+        padding: 40px;
+    }
+}
+
+@media(max-width:1600px) {
+    #navbar {
+        padding: 0 3%;
+    }
+    #member {
+        width: 200px;
+    }
+    #progsec {
+        padding: 0 0;
+    }
+    #schedule a {
+        color: #50d890;
+        padding: 40px 60px;
+    }
+    #slotsubheadin {
+        color: #f1f1f1;
+        margin: 0 150px 30px 0
+    }
+    .banner2 p {
+        margin: 26px 100px 40px 100px;
+    }
+    .card {
+        padding: 10px;
+    }
+}
+
+@media(max-width:1500px) {
+    #map {
+        margin: 0 100px 0 0;
+    }
+}
+
+@media(max-width:1400px) {
+    #slotsubheadin {
+        margin: 0 100px 30px 0;
+    }
+    #card {
+        flex-direction: column;
+    }
+    .card img {
+        width: 400px;
+        margin: 0 auto;
+    }
+    #map {
+        margin: 0 20px 0 0;
+    }
+}
+
+@media(max-width:1300px) {
+    #scheduleslot img {
+        width: 600px;
+    }
+    #slottimes {
+        flex: 5;
+    }
+    #scheduleslot {
+        padding: 0 100px 0 0;
+    }
+    #slotsubheadin {
+        color: #f1f1f1;
+        margin: 0 30px 30px 0;
+    }
+    #contactscontent {
+        flex-direction: column;
+    }
+    #map {
+        margin: 0;
+    }
+    #actualmap {
+        text-align: center;
+        margin: 0 auto;
+        margin: 0 0;
+    }
+    #map {
+        width: 100%;
+        margin: 0 0 100px 0;
+    }
+}
+
+@media(max-width:1230px) {
+    #navbar {
+        padding: 0 0%;
+        justify-content: space-around;
+    }
+    #section {
+        padding: 0 0%;
+    }
+    #member {
+        width: 200px;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1130px) {
+    .navframes a {
+        padding: 10px 15px;
+    }
+    .progsubheading {
+        margin: 0;
+        line-height: 36px;
+    }
+    #programs p {
+        font-size: .9rem;
+        line-height: 36px;
+    }
+    .banner p {
+        margin: 15px 100px 40px 100px;
+        line-height: 36px;
+    }
+    #slot {
+        flex-direction: column;
+    }
+    #scheduleslot {
+        padding: 100px 0;
+        align-items: center;
+        height: fit-content;
+    }
+    #slotsubheadin {
+        color: #f1f1f1;
+        margin: 0;
+        text-align: justify;
+        padding: 40px 80px;
+        line-height: 36px;
+    }
+    #slotheading {
+        margin: 30px 0 0 0;
+    }
+    .slotoptions {
+        margin: 25px 0;
+    }
+}
+
+@media(max-width:1120px) {
+    body {
+        overflow-x: hidden;
+    }
+    .navframes {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #272727;
+        width: 50%;
+        transform: translateX(100%);
+        transition: all ease-in-out 0.4s;
+    }
+    .burger {
+        cursor: pointer;
+        display: block;
+    }
+    .navlinks-active {
+        transform: translateX(0%);
+    }
+    body::-webkit-scrollbar {
+        width: 0;
+    }
+    body::-webkit-scrollbar-track {
+        background-color: #313131;
+        border-radius: 0;
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: #50d890;
+        border-radius: 0;
+    }
+    #section {
+        display: block;
+        text-align: left;
+        padding: 250px 50px;
+    }
+    #section h1 {
+        margin: 70px 0;
+    }
+}
+
+@media(max-width:1000px) {
+    .banner p {
+        margin: 15px 10px 40px 10px;
+    }
+    #trainers {
+        padding: 0 50px;
+    }
+}
+
+@media(max-width:800px) {
+    .prog {
+        margin: 100px 40px;
+    }
+    .prog img {
+        width: 100px;
+    }
+    .details {
+        height: 100px;
+    }
+    #programs p {
+        font-size: .9rem;
+    }
+    .progsubheading {
+        margin: 0 20px 50px 20px;
+        text-align: justify;
+    }
+    #scheduleslot img {
+        width: 350px;
+    }
+    #slotheading {
+        margin: 30px 0 0 0;
+        font-size: 1.5rem;
+    }
+    #slotsubheadin {
+        padding: 40px 20px;
+        font-size: .9rem;
+    }
+    .banner p {
+        text-align: justify;
+    }
+    .banner2 p {
+        margin: 26px 50px 40px 50px;
+        text-align: justify;
+    }
+    .banner2 h1 {
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 36px;
+    }
+    footer p {
+        padding: 0 60px;
+        text-align: center;
+        line-height: 26px;
+    }
+}
+
+
+/* id=section's responsiveness has been done */

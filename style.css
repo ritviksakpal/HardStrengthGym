@@ -73,7 +73,9 @@ body::-webkit-scrollbar-thumb {
     background-color: #50d890;
     border: none;
     color: #272727;
-    cursor: pointer;
+    cursor: pointer;    
+    border: #272727 solid 1px;
+
 }
 
 #navbar {
